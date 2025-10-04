@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Maram ABAIDI</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">John Doe</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Maram ABAIDI</h1>
+      <p class="section__text__p2">Software Engineer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/Maram_ABAIDI.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+          onclick="location.href='https://www.linkedin.com/in/maram-abaidi/'" />
+        <img src="./assets/github.png" alt="My Github profile" class="icon"
+          onclick="location.href='https://github.com/MaramAbaid'" />
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <!-- <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2+ years <br />Frontend Development</p>
+            </div> -->
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+
+            <div class="education-entry">
+              <h4>National Engineering School of Tunis (ENIT)</h4>
+              <p><strong>2022 – 2025</strong></p>
+              <p><em>Computer Engineering</em></p>
+              <p>
+                A comprehensive program in computer engineering with a focus on software
+                engineering, web and mobile development, and advanced topics such as
+                artificial intelligence, machine learning, and deep learning.
+              </p>
+            </div>
+
+            <div class="education-entry">
+              <h4>Preparatory Institute for Engineering Studies of El Manar (IPEIEM)</h4>
+              <p><strong>2020 – 2022</strong></p>
+              <p><em>Preparatory Cycle in Mathematics and Physics</em></p>
+              <p>
+                Intensive training in mathematics, physics, and computer science, preparing
+                for competitive exams for engineering schools, with a strong emphasis on
+                algorithms and programming.
+              </p>
+            </div>
+          </div>
+
+        </div>
+        <div class="text-container">
+          <p>
+            👋 Hello!
+
+            I’m Maram Abaidi, a software engineer from the National Engineering School of Tunis (ENIT), with a strong
+            passion for Full Stack Development, DevOps, and Microservices Architecture.
+
+            💡 My key areas of expertise include:
+
+            Full Stack Development (Frontend & Backend)
+
+            DevOps practices and principles
+
+            Microservices development and architecture
+
+            Project management and technical problem-solving
+
+            I enjoy building scalable, efficient, and user-focused solutions while constantly exploring better ways to
+            improve performance and adaptability. My goal is to contribute to impactful projects where innovation and
+            collaboration drive success.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+
+    <div class="experience-details-container">
+
+      <!-- ELYADATA Experience -->
+      <div class="experience-card">
+        <h2>Intern - Software Engineer</h2>
+        <p class="experience-duration">February 2025 – August 2025</p>
+        <p class="experience-company">ELYADATA</p>
+        <ul class="experience-highlights">
+          <li>Designed and developed <strong>NOTIFY</strong>, a workflow automation platform enabling visual process
+            design, task automation, and integration with various applications.</li>
+          <li>Backend development with Quarkus and Spring Boot (API Gateway) using <strong>hexagonal
+              architecture</strong>, Microsoft OAuth 2.0 authentication, <strong>exception handling</strong>, and
+            <strong>centralized logging</strong>.</li>
+          <li>Improved scalability and concurrency management via <strong>virtual threads</strong>.</li>
+          <li>Database persistence using <strong>Hibernate ORM</strong> and versioning with <strong>Liquibase</strong>
+            on PostgreSQL.</li>
+          <li>Frontend development with Angular, RxJS, and BPMN.js, including customization of BPMN triggers and actions
+            for interactive workflow tracking.</li>
+          <li>Implemented unit and integration tests (JUnit 5, Mockito) and validated APIs via Swagger and Postman.</li>
+          <li>CI/CD pipelines using GitLab CI, Jenkins, Docker, and Kubernetes.</li>
+        </ul>
+        <p class="experience-skills">
+          Skills: Angular, RxJS, Quarkus, Spring Boot, PostgreSQL, Hibernate, Liquibase, BPMN.js, JUnit 5, Mockito,
+          Docker, Kubernetes
+        </p>
+      </div>
+
+      <!-- Viewise Experience -->
+      <div class="experience-card">
+        <h2>Intern - Fullstack Java/Angular</h2>
+        <p class="experience-duration">July 2024 – August 2024</p>
+        <p class="experience-company">Viewise</p>
+        <ul class="experience-highlights">
+          <li>Designed and developed a platform based on Spring Boot and Angular to create custom chatbots for
+            businesses without programming skills.</li>
+          <li>Integrated chatbots with Facebook Messenger, WhatsApp, and websites.</li>
+        </ul>
+        <p class="experience-skills">
+          Skills: Spring Boot, Angular, Chatbot Development, Multichannel Integration
+        </p>
+      </div>
+      <div class="experience-card">
+        <h2>Intern- Frontend Development</h2>
+        <p class="experience-duration">August – September 2023</p>
+        <p class="experience-company">Viewise, Tunis, Tunisia</p>
+        <ul class="experience-highlights">
+          <li>Designed and developed the frontend of the Viewise website using HTML, CSS, JavaScript, and Angular.</li>
+        </ul>
+        <p class="experience-skills">
+          Skills: HTML, CSS, JavaScript, Angular
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="projects-container">
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/Untitled.jpeg" alt="Project 1" class="project-img" />
+        </div>
+
+        <h2 class="experience-sub-title project-title">Order Management System</h2>
+
+        <!-- Project description -->
+        <p class="project-description">
+          Design and development of an order management solution incorporating microservices for clients, products,
+          orders, payments, and notifications. Implementation of an API Gateway, a Config Service, and a Discovery
+          Service (Eureka) using Spring Boot and Spring Cloud for centralized configuration. A distributed architecture
+          was implemented with Kafka and Zookeeper for asynchronous messaging, while service security was ensured via
+          Keycloak and log traceability with Zipkin.
+          <br><strong>Skills:</strong>
+          <span class="skills-text"> Microservices, Spring Boot, Spring Cloud, Eureka Service, Kafka, Zookeeper, Zipkin,
+            Keycloak, REST APIs, Docker, PostgreSQL, MongoDB</span>
+        </p>
+
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/MaramAbaid/e-commerce-microservices.git'">
+            Github
+          </button>
+        </div>
+      </div>
+
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/intern.jpeg" alt="Project 3" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">Internship Management Platform</h2>
+        <p class="project-description">
+          Developed a platform for internship management using web scraping to enable users to search for summer
+          internships or final-year projects (PFE). Integrated security using Spring Security and JWT, with distributed
+          services powered by Spring Cloud OpenFeign, API Gateway, and Discovery Server. Implemented GraphQL and SOAP
+          for data interaction. <br>
+          <strong>Skills:</strong>
+          <span class="skills-text">Spring Boot, Spring Security, JWT, Spring Cloud OpenFeign, API Gateway, Discovery
+            Server, GraphQL, SOAP </span>
+        </p>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/MaramAbaid/internship-management-platform'">
+            Github
+          </button>
+
+        </div>
+      </div>
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/images.jpeg" alt="Project 2" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">ENIConnecT</h2>
+        <p class="project-description">
+          Developed an innovative and interactive solution to address the academic questions of ENIT students. Whether it concerns courses, academic projects, or specific fields of study, this platform facilitates knowledge sharing and collaboration among members of the university community.
+          <br>
+          <strong>Skills:</strong>
+          <span class="skills-text"> MongoDB, Node.js, Express.js, HTML, CSS, JavaScript, Bootstrap </span>
+        </p>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/MaramAbaid/ENIConnecT'">
+            Github
+          </button>
+
+        </div>
+      </div>
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/sport.jpeg" alt="Project 2" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">Sports Social Network Platform</h2>
+        <p class="project-description">
+          Developed a social networking platform for sports enthusiasts. The platform features login, registration, and
+          a homepage displaying all sports practiced by members. Users can add new sports if not already listed and
+          search for people practicing the same sport in their region. By entering their address and sport, users can
+          view details of others practicing the same sport nearby, fostering a community of sports enthusiasts sharing
+          common interests.
+          <br>
+          <strong>Skills:</strong>
+          <span class="skills-text">Symfony Framework, Data Manipulation, WAMP, Bootstrap, SQL</span>
+        </p>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/MaramAbaid/sports-social-network-platform.git'">
+            Github
+          </button>
+
+        </div>
+      </div>
+            <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/ci.png" alt="Project 2" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">CI/CD Pipeline for Spring Boot Application</h2>
+        <p class="project-description">
+        Developed and implemented a CI/CD pipeline for a Spring Boot application using GitHub Actions for continuous integration and Docker Hub for containerization and deployment. The workflow automated the build, test, and deployment process—executing unit tests, packaging the application with Maven, building Docker images, and pushing them to Docker Hub. This setup ensures efficient, reliable, and automated delivery of application updates.
+          <br>
+          <strong>Skills:</strong>
+<span class="skills-text">
+  GitHub Actions, Docker, Docker Hub, Spring Boot, Maven, CI/CD Pipelines, JUnit, YAML, Git, GitHub, DevOps
+</span>        </p>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/MaramAbaid/spring-boot-ci-cd-pipeline'">
+            Github
+          </button>
+
+        </div>
+      </div>
+            <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/lake.jpeg" alt="Project 2" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">ECOPACT – Marine Waste Management Platform</h2>
+        <p class="project-description">
+        Developed ECOPACT, a full-stack web platform for monitoring and managing marine waste discharges in the Lake of Bizerte, connecting the National Agency for Environmental Protection with its clients. Built using the MERN stack, the application includes real-time monitoring, reporting dashboards, and integrates DevOps practices for continuous delivery and containerized deployment.
+          <br>
+          <strong>Skills:</strong>
+          <span class="skills-text"><span class="skills-text">
+  React.js, Node.js, MongoDB, Express.js, Git, Docker, Docker Compose, Kubernetes, Jenkins, DevOps, Real-time Monitoring, Full-Stack Development
+</span></span>
+        </p>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/MaramAbaid/Lake-waste-mangement-app'">
+            Github
+          </button>
+
+        </div>
+      </div>
+    </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+
+  <!-- <section id="skills">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title"> Explore My </br>Skills</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>HTML</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>CSS</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>SASS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>JavaScript</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>TypeScript</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Material UI</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>PostgreSQL</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Node JS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Express JS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Git</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section> -->
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2023 Maram ABAIDI. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
